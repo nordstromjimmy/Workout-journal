@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calendar-container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </div>
+    <div class="workout-container">
+      <div>
+        <h1>Workouts</h1>
+        <div id="insert"></div>
+      </div>
+      <div id="workoutModal" class="modal">
+        <div class="modal-content">
+            <p>Add your workout below</p><br>
+            <form>
+                <label for="workoutname">Workout Name:</label>
+                <input type="text" id="workoutname"><br><br>
+                <label for="workoutsets">Workout Sets:</label>
+                <input type="text" id="workoutsets"><br><br>
+                <label for="workoutreps">Workout Reps:</label>
+                <input type="text" id="workoutreps"><br><br>
+                <button type="button" id="saveWorkout">Add</button>
+                <button type="button" id="closeWorkout">Close</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="calendar.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
